@@ -1,0 +1,78 @@
+.rotacao {
+    animation: giro 10s ease infinite alternate-reverse;
+}
+
+@keyframes giro {
+    0%{
+        transform: rotate(0deg) scale(1);
+    }
+
+    75% {
+        
+    }
+    100%{
+        transform: rotate(720deg) scale(1.6);
+    }
+}
+
+.dimensao {
+    animation: dimension 2s ease infinite alternate-reverse;
+}
+
+@keyframes dimension {
+    0% {
+        transform: scale(1) translate(0px, 0px);
+    }
+    80% {
+        filter: brightness(1);
+    }
+    100% {
+        transform: scale(1.03) translate(0px, -8px);
+        filter: brightness(1.6)
+    }
+}
+
+.foco {
+    animation: foco 4s ease infinite alternate;
+}
+
+@keyframes foco {
+    0% {
+        opacity: 0;
+        filter: blur(6px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+.foco2 {
+    animation: foco2 6s ease infinite alternate;
+}
+
+@keyframes foco2 {
+    0% {
+        opacity: 0;
+        filter: blur(6px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+.blurdata {
+    animation: blurdata 6s ease infinite alternate;
+}
+
+@keyframes blurdata {
+    0% {
+        opacity: 0;
+        
+    }
+    100% {
+        opacity: 1;
+        
+    }
+}
